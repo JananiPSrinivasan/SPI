@@ -17,14 +17,14 @@ package spi_config_pkg;
     } spi_mode;
 
     typedef enum logic [1:0]{
-        IDLE = 2'b00,
+        MOSI_IDLE = 2'b00,
         START_TX = 2'b01,
         TRANSMIT = 2'b10,
         END_TX = 2'b11
     } mosi_states;
 
     typedef enum logic [1:0]{
-        IDLE = 2'b00,
+        MISO_IDLE = 2'b00,
         START_RX = 2'b01,
         RECIEVE = 2'b10,
         END_RX = 2'b11
